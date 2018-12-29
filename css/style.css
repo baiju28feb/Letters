@@ -1,0 +1,489 @@
+/*Remove Defaults*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*Remove defaults ends*/
+
+
+/*Helper Class Starts*/
+.leftalign {
+    float: left;
+}
+
+.rightalign {
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Helper Classes Ends */
+
+
+/* Genreral rules */
+
+@font-face {
+    font-family: 'HelveticaNeue-Thin';
+    src: local('HelveticaNeue-Thin.otf'), url('HelveticaNeue-Thin.otf') format('opentype');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 40px 20px;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'monstarat', sans-serif;
+}
+
+
+#hero {
+    background-image: linear-gradient(rgba(218, 46, 28, 0.6), rgba(218, 46, 52, 0.6)), url('../img/hero-bg.png');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h2 {
+    font-size: 52px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    text-transform: uppercase;
+    border-bottom: 4px solid white transparent;
+    padding-bottom: 3px;
+    font-weight: 700;
+
+}
+
+.nav li a:hover {
+    border-bottom: 2px solid white;
+    transition: border-bottom 0.1s, color 0.1s;
+}
+
+.cta-info h2 {
+    color: white;
+    margin-bottom: 40px;
+}
+
+.cta {
+    display: inline-block;
+    margin-top: 90px;
+    position: relative;
+}
+
+.imgs {
+    position: absolute;
+    left:50%;
+    top: 0px;
+    bottom: 0px;
+    right:0px;
+}
+
+.iphone-off{
+    position: absolute;
+    width:70%;
+    bottom: -250px;
+    right: 50px;
+}
+.iphone-on{
+    position: absolute;
+    width: 45%;
+    right: 123px;
+    bottom:-114px;
+    
+}
+
+.iphone-btn{
+position: absolute;
+width: 8%;
+right:145px;
+top: 83px;
+}
+
+.cta-info {
+    width: 60%;
+    margin: 40px 20px;
+}
+
+.cta-info p {
+    color: white;
+    font-size: 36px;
+    font-family: HelveticaNeue-Thin;
+    line-height: 40px;
+    margin-bottom: 50px;
+}
+
+.cta-button {
+    background-color: #282828;
+    padding: 25px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    transition: .6s;
+}
+
+.cta-button:hover {
+    background: #383737;
+    transition: .6s;
+}
+
+.iphone-icon {
+    vertical-align: middle;
+    margin-right: 20px;
+
+}
+
+#appfunctions{
+    text-align: center;
+    margin: 60px 20px;
+}
+.app-functions{
+    color: #8a8a8a;
+    margin-bottom: 30px;
+}
+
+.app-para{
+    padding: 0 50px;
+    color: #8a8a8a;
+    font-family: HelveticaNeue-Thin;
+    font-size: 22px;
+    line-height: 30px
+}
+.col-4-app{
+    width:33.33%;
+     float:left;
+     padding: 20px 50px;
+}
+
+.col-4-app p{
+    font-family: HelveticaNeue-Thin;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 30px 0;
+}
+
+.col-4-app h3{
+    font-size:24px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-family: monstarat;
+}
+.row{
+    margin-top: 50px;
+    overflow: hidden;
+}
+#nose{
+    background-image: url(../img/noselady.png);
+    background-size: cover;
+    background-position: center;    
+}
+
+#nose .container{
+    width:60%
+}
+.nose-heading{
+    width: 50%;
+    color:white;
+    padding: 100px 0px;
+    
+}
+h3{
+    font-size: 52px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nose-para{
+    width:50%;
+    font-size: 24px;
+    color:#8a8a8a;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+
+.download-btn{
+    padding: 15px;
+    background-color: #d9332d;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    text-transform: uppercase;
+    transition: .6s;
+}
+
+.download-btn:hover{
+    background-color: coral;
+    transition: .6s;
+}
+
+.reddish{
+    color: #d9332d;
+}
+
+.col-4-foo{
+    float:left;
+    width: 33.33%;
+    color: white;
+}
+footer{
+    background-color: #2e2e38;
+}
+.col-4-foo h4{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding: 20px;
+}
+
+.foolist-pp li{
+    background: url(../img/box.png) no-repeat;
+    padding-left:70px;
+    margin-bottom: 10px
+}
+
+.foolist-pp p{
+    font-family: HelveticaNeue-Thin;
+}
+.foolist-ts h5{
+    font-weight: 700;
+}
+.foolist-ts li{
+    margin-bottom: 20px;
+    font-family: HelveticaNeue-Thin;
+}
+.foolist-ts .seen-time{
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.col-4-foo .about-para{
+    font-size: 15px;
+    font-family: HelveticaNeue-Thin;
+    line-height:25px;
+    width:75%;
+}
+
+#copyright p{
+    font-family: HelveticaNeue-Thin;
+    font-size: 15px;
+}
+
+#copyright{
+    text-align: center;
+}
+#copyright a{
+    text-decoration: none;
+    font-family: HelveticaNeue-Thin;
+    color: black;
+}
+.inline{ display: inline-block;
+    
+}
+.inline img{
+    padding: 0 25px 0 50px;
+    vertical-align: middle;
+}
+
+.name:after,
+.copy:after{
+    content: "";
+    border: 1px #555555 solid;
+    margin: 0 20px;
+}
+
+/*Animation */
+
+.js-wp-2{
+    opacity: 0;
+}
+
+.js-wp-2.animated{
+    opacity: 1;    
+}
+
+
+.js-wp-3{
+    opacity: 0;
+    animation-delay: 3.2s;
+}
+
+.js-wp-3.animated{
+    opacity: 1;    
+}
+
+/*Media queries/ Responsiveness */
+
+@media only screen and (max-width: 1120px ){
+    
+    .imgs{
+        display: none;
+    }
+    
+}
+
+
+
+
+
+
